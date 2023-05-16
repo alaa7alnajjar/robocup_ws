@@ -15,6 +15,14 @@ sudo apt-get install rcssserver3d
 sudo apt-get update && sudo apt-get install rcssserver3d
 
 ```
+To start the server, in any terminal run:
+
+```
+
+rcssserver3d
+
+```
+
 #
 #
 #
@@ -28,11 +36,18 @@ sudo apt-get update && sudo apt-get install rcssserver3d
 #
 
 ## Roboviz:
-to run roboviz, inside the floder src/RoboViz/bin/
-run the command:
+to use roboviz, 
+
+inside the floder: src/RoboViz/bin/
+
+run the command in terminal:
 
 ```
 
 ./robovizrun.sh
 
 ```
+#
+#
+#
+
