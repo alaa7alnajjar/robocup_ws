@@ -1,2 +1,0 @@
-Invoking command in '/home/alaa7alnajjar/robocup_ws/build/UTAustinVillaBase': /usr/bin/cmake /home/alaa7alnajjar/robocup_ws/src/utaustinvilla3d-master -DCMAKE_INSTALL_PREFIX=/home/alaa7alnajjar/robocup_ws/install/UTAustinVillaBase
-Invoked command in '/home/alaa7alnajjar/robocup_ws/build/UTAustinVillaBase' returned '1': /usr/bin/cmake /home/alaa7alnajjar/robocup_ws/src/utaustinvilla3d-master -DCMAKE_INSTALL_PREFIX=/home/alaa7alnajjar/robocup_ws/install/UTAustinVillaBase
