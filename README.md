@@ -22,3 +22,13 @@ sudo apt-get update && sudo apt-get install rcssserver3d
 
 ## install UTasutinvilla team: 
 [Here](https://github.com/LARG/utaustinvilla3d)
+
+## Roboviz:
+to run roboviz, inside the floder src/RoboViz/bin/
+run the command:
+
+```
+
+./robovizrun.sh
+
+```
