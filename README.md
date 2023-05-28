@@ -15,6 +15,14 @@ sudo apt-get install rcssserver3d
 sudo apt-get update && sudo apt-get install rcssserver3d
 
 ```
+To start the server, in any terminal run:
+
+```
+
+rcssserver3d
+
+```
+
 #
 #
 #
@@ -22,3 +30,24 @@ sudo apt-get update && sudo apt-get install rcssserver3d
 
 ## install UTasutinvilla team: 
 [Here](https://github.com/LARG/utaustinvilla3d)
+
+#
+#
+#
+
+## Roboviz:
+to use roboviz, 
+
+inside the floder: src/RoboViz/bin/
+
+run the command in terminal:
+
+```
+
+./robovizrun.sh
+
+```
+#
+#
+#
+
