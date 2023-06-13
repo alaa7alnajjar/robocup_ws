@@ -9,8 +9,8 @@ V-Sync               : false
 FSAA                 : true
 FSAA Samples         : 8
 Target FPS           : 30
-First Person FOV     : 60
-Third Person FOV     : 60
+First Person FOV     : 30
+Third Person FOV     : 30
 Frame Width          : 1920
 Frame Height         : 996
 Frame X              : 0

@@ -6,9 +6,9 @@
 
 ##<--Walk parameters for going to a target-->##
 // Maximum size of steps in radians and millimeters 
-utwalk_max_step_size_angle	1.22
-utwalk_max_step_size_x	50
-utwalk_max_step_size_y	40
+utwalk_max_step_size_angle	1.55
+utwalk_max_step_size_x	60
+utwalk_max_step_size_y	50
 // How much center of mass is shifted from side to side during walk in millimeters
 utwalk_shift_amount	20
 // Height of the torso from ground in millimeters

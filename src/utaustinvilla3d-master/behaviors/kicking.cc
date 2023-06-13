@@ -83,7 +83,60 @@ SkillType NaoBehavior::kickBallAtPresetTarget() {
 
     // If we're within 1 meter of the ball and not dribbling, we need to select a kick and position ourselves
     // Dribbling is handled later
-    if (me.getDistanceTo(ball) <= 1 && KICK_DRIBBLE != kickType) {
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // KICK_DRIBBLE != kickType 
+    //me.getDistanceTo(ball) <= 1 && KICK_DRIBBLE != kickType && 
+    if (me.getDistanceTo(ball) <= 1 && KICK_DRIBBLE != kickType && me.getDistanceTo(kickTarget) <=4 ) {
+
+        WorldObject* opp1 = worldModel->getWorldObject(WO_OPPONENT1);
+        VecPosition op1 = opp1->pos;
+        double opponent1 = me.getDistanceTo(op1);
+
+       WorldObject* opp2 = worldModel->getWorldObject(WO_OPPONENT2);
+        VecPosition op2 = opp2->pos;
+        double opponent2 = me.getDistanceTo(op2);
+
+       WorldObject* opp3 = worldModel->getWorldObject(WO_OPPONENT3);
+        VecPosition op3 = opp3->pos;
+        double opponent3 = me.getDistanceTo(op3);
+
+       WorldObject* opp4 = worldModel->getWorldObject(WO_OPPONENT4);
+        VecPosition op4 = opp4->pos;
+        double opponent4 = me.getDistanceTo(op4);
+
+       WorldObject* opp5 = worldModel->getWorldObject(WO_OPPONENT5);
+        VecPosition op5 = opp5->pos;
+        double opponent5 = me.getDistanceTo(op5);
+
+       WorldObject* opp6 = worldModel->getWorldObject(WO_OPPONENT6);
+        VecPosition op6 = opp6->pos;
+        double opponent6 = me.getDistanceTo(op6);
+
+       WorldObject* opp7 = worldModel->getWorldObject(WO_OPPONENT7);
+        VecPosition op7 = opp7->pos;
+        double opponent7 = me.getDistanceTo(op7);
+
+       WorldObject* opp8 = worldModel->getWorldObject(WO_OPPONENT8);
+        VecPosition op8 = opp8->pos;
+        double opponent8 = me.getDistanceTo(op8);
+
+       WorldObject* opp9 = worldModel->getWorldObject(WO_OPPONENT9);
+        VecPosition op9 = opp9->pos;
+        double opponent9 = me.getDistanceTo(op9);
+
+       WorldObject* opp10 = worldModel->getWorldObject(WO_OPPONENT10);
+        VecPosition op10 = opp10->pos;
+        double opponent10 = me.getDistanceTo(op10);
+
+       WorldObject* opp11 = worldModel->getWorldObject(WO_OPPONENT11);
+        VecPosition op11 = opp11->pos;
+        double opponent11 = me.getDistanceTo(op11);
+
+
+        int opthresh = 5;
+
+        if (opponent1 >= opthresh || opponent2 >= opthresh || opponent3 >= opthresh || opponent4 >= opthresh || opponent5 >= opthresh || opponent6 >= opthresh || 
+        opponent7 >= opthresh || opponent8 >= opthresh || opponent9 >= opthresh || opponent10 >= opthresh || opponent11 >= opthresh){
         // Figure out which kick to use (left or right foot)
         SkillType kick;
         double ball_dist;
@@ -134,6 +187,7 @@ SkillType NaoBehavior::kickBallAtPresetTarget() {
         }
 
         return kickBallAtTargetSimplePositioning(currentTarget, currentKick, currentKickType);
+        } ///////////////////////
     } else {
         // Here is how we dribble
 

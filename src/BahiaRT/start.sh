@@ -32,7 +32,7 @@ echo "Launch 2"
 ./bahiart -robot naotoe.xml -u 2 -h ${host} -p ${port} -training ${trainingMode}>/dev/null 2>&1 &
 sleep ${WAITTIME}
 echo "Launch 3"
-#./bahiart -u 3 -h $1>/dev/null 2>&1 &
+./bahiart -u 3 -h $1>/dev/null 2>&1 &
 ./bahiart -robot naotoe.xml -u 3 -h ${host} -p ${port} -training ${trainingMode}>/dev/null 2>&1 &
 sleep ${WAITTIME}
 echo "Launch 4"
